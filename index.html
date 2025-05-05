@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <title>Class Activities - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class = "bar">
+    <h1>INST 377 Activities</h1>
+  </div>
+  <!-- nav -->
+  <nav class = "main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <div class = "main">
+    <h2>Try some different activities!</h2>
+    <div class = "buttons-row">
+      <button class="button-56" onclick="location.href='stocks.html'">Go to Stocks</button>
+      <button class="button-56" onclick="location.href='dogs.html'">Go to Dogs</button>
+    </div>
+  </div>
+  <!-- quotes -->
+  <div class = "section1">
+    <h2>Quote of the Page Load:</h2>
+    <p id="quote">quote</p>
+  </div>
+
+<!-- voice commands -->
+  <div class="audio-controls">
+    <h2>Voice Commands</h2>
+    <ul>
+      <li>Say Hello back to you!</li>
+        <ul>
+          <li>
+            Say: <b>Hello</b>
+          </li>
+        </ul>
+      <li>Changes background color</li>
+        <ul>
+          <li>
+            Say: <b>Change the color to &lt;color&gt;</b>
+          </li>
+        </ul>
+      <li>Go to specified page</li>
+      <ul>
+        <li>
+          Say: <b>Navigate to &lt;page&gt;</b>
+        </li>
+      </ul>
+    </ul>
+    <div class = "buttons-row">
+      <button class="button-80" onclick="startVoice()">Turn On Audio</button>
+      <button class="button-80" onclick="stopVoice()">Turn Off Audio</button>
+    </div>
+    
+  </div>
+
+  <!-- js stuff -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
