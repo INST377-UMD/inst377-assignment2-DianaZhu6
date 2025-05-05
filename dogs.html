@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <title>Class Activities - Dogs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "bar">
+        <h1>INST 377 Activities</h1>
+      </div>
+      <!-- nav -->
+      <nav class = "main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stocks.html">Stocks</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+      </nav>
+
+      <div class = "main">
+        <h2>DOGGSSS!!!!</h2>
+        <!-- image carousel -->
+        <section id="carousel-section">
+          <div id="dog-carousel" class="slider"></div>
+        </section>
+        <!-- breed buttons info -->
+        <div class = "section2">
+            <section id="breed-section">
+                <h2>Dog Breeds</h2>
+                <div id="breed-buttons" class="buttons-row"></div>
+              </section>
+            
+              <section id="breed-info" style="display: none;" >
+                <h2 id="breed-name"></h2>
+                <p id="breed-description"></p>
+                <p><strong>Minimun Life Expectancy:</strong> <span id="min-life"></span> years</p>
+                <p><strong>Maximun Life Expectancy:</strong> <span id="max-life"></span> </p>
+              </section>
+        </div>
+        
+      </div>
+  
+<!-- voice commmands  -->
+  <div class="audio-controls">
+    <h2>Voice Commands</h2>
+    <ul>
+      <li>Say Hello back to you!</li>
+        <ul>
+          <li>
+            Say: <b>Hello</b>
+          </li>
+        </ul>
+      <li>Changes background color</li>
+        <ul>
+          <li>
+            Say: <b>Change the color to &lt;color&gt;</b>
+          </li>
+        </ul>
+      <li>Go to specified page</li>
+      <ul>
+        <li>
+          Say: <b>Navigate to &lt;page&gt;</b>
+        </li>
+      </ul>
+      <li>Load Dog breed</li>
+      <ul>
+        <li>
+          Say: <b>Load dog breed &lt;dog breed&gt;</b>
+        </li>
+      </ul>
+    </ul>
+    <div class = "buttons-row">
+      <button class="button-80" onclick="startVoice()">Turn On Audio</button>
+      <button class="button-80" onclick="stopVoice()">Turn Off Audio</button>
+    </div>
+    
+  </div>
+
+  <!-- js stuff  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://unpkg.com/simple-slider@1.0.0/dist/simpleslider.min.js"></script>
+  <script src="dogs.js"></script>
+</body>
+</html>
